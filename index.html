@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CRUDS OPERATIONS</title>
+    <!-- B O O T S T R A P       F I L E -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="container">
+      <!-- T I T L E -->
+      <h1 class="text-center text-uppercase my-5">cruds operations</h1>
+      <!-- S T A R T       I N P U T S -->
+      <div class="inputs">
+        <div class="product-title my-4">
+          <input
+            class="form-control"
+            type="text"
+            id="product-title"
+            placeholder="Product Title"
+          />
+        </div>
+        <div class="product-price my-4">
+          <input
+            class="form-control"
+            type="number"
+            id="product-price"
+            placeholder="Product Price"
+          />
+        </div>
+        <div class="product-categoray my-4">
+          <input
+            class="form-control"
+            type="text"
+            id="product-categoray"
+            placeholder="Product Categoray"
+          />
+        </div>
+        <div class="product-discription my-4">
+          <input
+            class="form-control"
+            type="text"
+            id="product-discription"
+            placeholder="Product Discription"
+          />
+        </div>
+        <div class="create-btn">
+          <button class="btn btn-outline-info" id="create-btn">
+            Create Product
+          </button>
+        </div>
+        <div class="search my-5">
+          <input
+            class="form-control"
+            type="search"
+            id="search"
+            placeholder="Search About Product..."
+          />
+        </div>
+      </div>
+      <!-- E N D       I N P U T S -->
+
+      <!-- ====================================================================================================================================== -->
+
+      <!-- S T A R T         O U T P U T S -->
+      <div class="outputs py-5">
+        <table class="table text-center text-uppercase">
+          <thead>
+            <th>id</th>
+            <th>Product Title</th>
+            <th>Product Price</th>
+            <th>Product Categoray</th>
+            <th>Product Description</th>
+            <th>Update</th>
+            <th>Delete</th>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+      <!-- E N D         O U T P U T S -->
+    </div>
+    <!-- C U S T O M         J S         F I L E -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
